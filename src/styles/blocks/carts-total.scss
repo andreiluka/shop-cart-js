@@ -1,0 +1,52 @@
+.carts-total {
+   padding: rem(35) rem(30);
+   background: $light-gray-color;
+   border-radius: 5px;
+
+   &__title {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: rem(31);
+   }
+
+   &__desc {
+      margin-bottom: rem(16);
+      padding-bottom: rem(11);
+      border-bottom: 1px solid $gray-color;
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: rem(18);
+   }
+
+   &__text {
+      font-weight: 500;
+   }
+
+   &__val {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-weight: 400;
+   }
+
+   &__result-text {
+      font-size: rem(18);
+      font-weight: 600;
+      margin-right: rem(10);
+   }
+
+   &__result-val {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+   }
+
+   &__btn {
+      margin-bottom: 12px;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}

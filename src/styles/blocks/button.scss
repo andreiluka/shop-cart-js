@@ -1,0 +1,25 @@
+.button {
+   width: 100%;
+   padding: 14px 40px;
+   border: 1px solid $blue-color;
+   border-radius: 4px;
+   font-weight: 600;
+   color: $blue-color;
+   transition: 0.4s;
+   font-size: rem(18);
+
+   &:hover {
+      background: $blue-color;
+      color: white;
+   }
+
+   &--blue {
+      background-color: $blue-color;
+      color: white;
+
+      &:hover {
+         background-color: white;
+         color: $blue-color;
+      }
+   }
+}

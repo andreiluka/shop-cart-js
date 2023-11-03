@@ -1,0 +1,87 @@
+.normal-cart {
+   display: flex;
+   align-items: flex-start;
+   
+   @include laptop {
+      flex-direction: column;
+      align-items: normal;
+   }
+
+   &__content {
+      margin-right: 4.3%;
+      width: 62.5%;
+   
+      @include laptop {
+         margin: 0 0 rem(20);
+         width: auto;
+      }
+   }
+   
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: rem(31);
+      
+      @include phones {
+         flex-wrap: wrap;
+      }
+   }
+   
+   &__title-block {
+      display: flex;
+      align-items: baseline;
+   
+      @include phones {
+         margin: 0 10px 15px 0;
+      }
+   }
+   
+   &__title {
+      font-weight: 700;
+      font-size: rem(44);
+      margin-right: rem(22);
+      
+      @include phones {
+         font-size: rem(32);
+      }
+   }
+   
+   &__amount {
+      font-size: rem(18);
+      color: $gray-color;
+   }
+   
+   &__clear {
+      color: $gray-color;
+      padding-bottom: 1px;
+      border-bottom: 1px solid $gray-color;
+      transition: 0.1s;
+      cursor: pointer;
+      
+      &:hover {
+         border-bottom: 0px solid $gray-color;
+      }
+   }
+   
+   &__list {
+      margin-bottom: 6px;
+   }
+   
+   &__item {
+      border-bottom: 1px solid #C4C4C4;
+   
+      &:last-child {
+         border-bottom: none;
+      }
+   }
+   
+   &__total {
+      width: 33.2%;
+   
+      @include laptop {
+         width: auto;
+         max-width: 520px;
+      }
+   }
+}

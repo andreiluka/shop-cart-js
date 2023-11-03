@@ -1,0 +1,96 @@
+.slider {
+   width: 100%;
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: rem(60);
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: rem(30);
+
+      @include phones {
+         font-size: rem(28);
+         margin: 0 rem(15) rem(15) 0;
+      }
+   }
+
+   &__btns {
+      display: flex;
+      align-items: center;
+   }
+
+   &__btn {
+      width: rem(50);
+      height: rem(50);
+      background: $dark-gray-color;
+      border-radius: 50%;
+      transition: 0.3s;
+      position: relative;
+
+      @include phones {
+         width: rem(40);
+         height: rem(40);
+      }
+
+      &:hover {
+         background: $gray-color;
+      }
+
+      &-right {
+         transform: rotate(180deg);
+      }
+
+      &::after {
+         content: '';
+         display: block;
+         width: rem(12);
+         height: rem(21);
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 20' fill='none' %3E%3Cpath d='M9 19L1 10L9 0.999999' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+         @include phones {
+            width: rem(12);
+            height: rem(16);
+         }
+      }
+   }
+
+   &__counter {
+      display: flex;
+      align-items: baseline;
+      column-gap: 0.2em;
+      padding: 0 rem(18);
+      font-size: rem(18);
+      color: $gray-color;
+   }
+
+   .swiper-pagination-fraction {
+      width: auto;
+
+      .swiper-pagination-current {
+         font-weight: 500;
+         font-size: rem(24);
+         color: $text-color;
+      }
+   }
+
+   &__block {
+      overflow: hidden;
+   }
+
+   &__list {
+      display: grid;
+      grid-auto-flow: column;
+   }
+}

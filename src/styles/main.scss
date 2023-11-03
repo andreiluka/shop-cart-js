@@ -1,0 +1,30 @@
+// variables
+
+$baseFontSize: 16px;
+$text-color: #1F2432;
+$blue-color: #0069B4;
+$gray-color: #797B86;
+$dark-gray-color: #90A2B5;
+$light-gray-color: #F6F8FA;
+
+
+// breakpoints
+
+$bp-desktop: 1200px;
+$bp-laptop: 992px;
+$bp-tablets: 768px;
+$bp-phones: 576px;
+
+
+// media
+
+@import "./layout/media.scss";
+
+// layout
+
+@import "~normalize.css/normalize";
+@import "./layout/mixins.scss";
+@import "./layout/fonts.scss";
+@import "./layout/layout.scss";
+
+@import "./blocks/*.scss";

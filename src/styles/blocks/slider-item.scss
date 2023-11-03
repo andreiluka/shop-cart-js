@@ -1,0 +1,48 @@
+.slider-item {
+   height: 100%;
+   display: grid;
+   grid-template-rows: minmax(auto, 245px) 1fr 0.1fr 0.1fr;
+   grid-auto-columns: 1fr;
+   background: $light-gray-color;
+   border-radius: 5px;
+   padding: rem(25);
+
+   &__pic {
+      margin-bottom: 5px;
+   }
+
+   &__img {
+      margin: 0 auto;
+   }
+
+   &__desc {
+      margin-bottom: rem(39);
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: rem(22);
+      margin-bottom: 10px;
+   }
+
+   &__text {
+      font-size: rem(14);
+      line-height: 1.45;
+   }
+
+   &__price {
+      margin-bottom: rem(20);
+   }
+
+   &__cost {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: rem(22);
+      letter-spacing: 0.005em;
+      margin-bottom: 5px;
+   }
+
+   &__currency {
+      color: $gray-color;
+   }
+}

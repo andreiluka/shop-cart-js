@@ -1,0 +1,74 @@
+.installation-goods {
+   display: flex;
+   align-items: center;
+   background: $light-gray-color;
+   border-radius: 5px;
+   padding: rem(26);
+   
+   @include phones {
+      padding: rem(20);
+   }
+
+   &__label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+   }
+   
+   &__checkbox {
+      display: none;
+   }
+   
+   &__checkbox:checked+&__checkbox-custom:after {
+      display: block;
+   }
+   
+   &__checkbox-custom {
+      width: rem(20);
+      height: rem(20);
+      background: #ffffff;
+      border: 1px solid $gray-color;
+      border-radius: 2px;
+      box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.08);
+      position: relative;
+      margin-right: rem(20);
+   
+   
+      &:after {
+         content: '';
+         width: rem(16);
+         height: rem(14);
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12' %3E%3Cpath d='M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z' fill='%230069B4' /%3E%3C/svg%3E");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         display: none;
+      }
+   }
+   
+   &__icon {
+      width: rem(50);
+      height: rem(50);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-right: rem(20);
+   }
+   
+   &__title {
+      font-weight: 600;
+      margin-bottom: 2px;
+   }
+   
+   &__text {
+      font-size: rem(14);
+      color: $gray-color;
+   }
+}

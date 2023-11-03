@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./images/content/favicon.ico">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" type="text/css" href="./main.min.css">
+   <title>Shop cart</title>
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+         <div class="mini-cart">
+            <div class="mini-cart__icon">
+               <svg class="mini-cart__pic"">
+                  <use xlink:href="./images/sprite.svg#cart"></use>
+               </svg>
+            </div>
+            <div class="mini-cart__desc">
+               <div class="mini-cart__title">Ваша корзина</div>
+               <div class="mini-cart__amount total-amount-goods"></div>
+               <div class="mini-cart__cost total-cost"></div>
+            </div>
+         </div>
+      </header>
+      <main class="page-cart">
+         <div class="breadcrumbs page-cart__breadcrumbs">
+            <ul class="breadcrumbs__list">
+               <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Главная</a>
+               </li>
+               <li class="breadcrumbs__item">
+                  Корзина
+               </li>
+            </ul>
+         </div>
+         <div class="page-cart__content">
+            <div class="normal-cart">
+               <div class="normal-cart__content">
+                  <div class="normal-cart__header">
+                     <div class="normal-cart__title-block">
+                        <h2 class="normal-cart__title">Ваша корзина</h2>
+                        <div class="normal-cart__amount total-amount-goods"></div>
+                     </div>
+                     <div class="normal-cart__clear">Очистить корзину</div>
+                  </div>
+                  <ul class="normal-cart__list"></ul>
+                  <div class="installation-goods normal-cart__installation">
+                     <label class="installation-goods__label">
+                        <input type="checkbox" value="installation" class="installation-goods__checkbox">
+                        <div class="installation-goods__checkbox-custom"></div>
+                     </label>
+                     <div class="installation-goods__icon">
+                        <svg class="installation-goods__pic">
+                           <use xlink:href="./images/sprite.svg#tools"></use>
+                        </svg>
+                     </div>
+                     <div class="installation-goods__desc">
+                        <div class="installation-goods__title">Установка</div>
+                        <div class="installation-goods__text">Отметьте, если Вам необходима консультация профессионала по монтажу выбранных товаров.</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carts-total normal-cart__total">
+                  <h4 class="carts-total__title">Итого</h4>
+                  <div class="carts-total__desc">
+                     <div class="carts-total__cost carts-total__row">
+                        <div class="carts-total__text">Сумма заказа</div>
+                        <div class="carts-total__val total-cost"></div>
+                     </div>
+                     <div class="carts-total__amount carts-total__row">
+                        <div class="carts-total__text">Количество</div>
+                        <div class="carts-total__val total-amount"></div>
+                     </div>
+                     <div class="carts-total__installation carts-total__row">
+                        <div class="carts-total__text">Установка</div>
+                        <div class="carts-total__val total-installation">Нет</div>
+                     </div>
+                  </div>
+                  <div class="carts-total__result carts-total__row">
+                     <div class="carts-total__result-text">Стоимость товаров</div>
+                     <div class="carts-total__result-val total-cost"></div>
+                  </div>
+                  <div class="carts-total__btns">
+                     <button type="button" id="button-submit" class="button button--blue carts-total__btn">Оформить заказ</button>
+                     <button type="button" class="button carts-total__btn">Купить в 1 клик</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider">
+            <div class="slider__header">
+              <h4 class="slider__title">Просмотренные товары</h4>
+              <div class="slider__btns">
+                <button type="button" class="slider__btn slider__btn-left"></button>
+                <div class="slider__counter"></div>
+                <button type="button" class="slider__btn slider__btn-right"></button>
+              </div>
+            </div>
+            <div class="slider__block">
+               <ul class="slider__list swiper-wrapper"></ul>
+            </div>
+         </div>
+      </main>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script type="module" src="./main.min.js"></script>
+</body>
+
+</html>

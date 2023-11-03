@@ -1,0 +1,26 @@
+.mini-cart {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 12px;
+   
+   &__icon {
+      width: 28px;
+      height: 25px;
+      margin-right: 12px;
+   } 
+   
+   &__title {
+      font-size: 13px;
+      font-weight: 600;
+   }
+   
+   &__amount {
+      color: $gray-color;
+      margin-bottom: 3px;
+   }
+   
+   &__cost {
+      font-weight: 600;
+   }
+}
