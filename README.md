@@ -8,4 +8,4 @@
 
 
 
-#### [Ссылка на GitHub Pages](https://andreyiuka.github.io/shop-cart-js/dist/)
+#### [Ссылка на GitHub Pages](https://andreiluka.github.io/shop-cart-js/dist/)
